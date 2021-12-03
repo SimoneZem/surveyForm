@@ -1,6 +1,6 @@
 <!--
-  User Story #6: If I enter an email that is not formatted correctly, 
-  I will see an HTML5 validation error.
+  User Story #7: Inside the form, 
+  I can enter a number in a field with id="number".
 -->
 <!doctype html>
 <head>
@@ -21,23 +21,20 @@
                 <il class="list-style">
                     <li class="first">
                         <label for="nome">Nome</label>
-                        <input type="text" placeholder="insert name" name="nome" id="nome" class="text" required> 
+                        <input type="text" placeholder="Insert name" name="nome" id="nome" class="text" required> 
                     </li>
                     <li class="first">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="Enter your email here" name="email" id="email" class="text" required>
+                        <input type="email" placeholder=" email here" name="email" id="email" class="text" required>
+                    </li>
+                    <li id="number">
+                        <label for="age">Age</label>
+                        <input type="text" placeholder="Age Here" name="age" id="age" class="text">
                     </li>
                 </il>
             
     </form>
 </div>
-<!--
-    in the last steps i forgot to set placeholder,
-    i made in this step. Regarding the validation error
-    i thinh that i've to add required.
--->
-
-
 
 </body>
 </html>
