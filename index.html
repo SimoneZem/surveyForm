@@ -1,5 +1,6 @@
 <!--
-    User Story #3: I can see a form with id="survey-form".
+   User Story #4: Inside the form element, 
+   I am required to enter my name in a field with id="name".
 -->
 <!doctype html>
 <head>
@@ -16,13 +17,22 @@
         <p id="description">
             Please, take only few minutes to help us. Thanks for your feedback
         </p>
-    </div>
-    <div id="survey-form">
-        
-    </div>
-
+        <form id="survey-form" action="data.php">
+                <il class="list-style">
+                    <li class="first">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" class="testo" required> 
+                    </li>
+                    
+                </il>
+            
     </form>
 </div>
-</body>
 
+<!--
+    As i can see we got the trasparent color in 2nd box.
+    Add opacity to class and a numeric value from 0 to 1
+-->
+
+</body>
 </html>
