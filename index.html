@@ -1,5 +1,6 @@
 <!--
- User Story #8: If I enter non-numbers in the number input, 
+ User Story #9: If I enter numbers outside the range of the number input, 
+ which are defined by the min and max attributes, 
  I will see an HTML5 validation error.
 -->
 <!doctype html>
@@ -28,16 +29,16 @@
                     </li>
                     <li id="number">
                         <label for="age">Age</label>
-                        <input type="number" pattern="\d*" placeholder="Age Here" name="age" id="age" class="text" required>
+                        <input type="number" pattern="\d*" placeholder="Age Here" name="age" id="age" min="01-01-2002" class="text" required>
                     </li>
                 </il>
             
     </form>
 </div>
 <!--
-    first of i have to switch my input type form text to number,
-    then i've to add pattern="\d*", accepts more than one of them.
-    finally i add input:invalid to my style.css
+    If i want a valid range of number for my input
+    i've to set min attribute:
+    <input type="number" min="xx-yy-zzzz"
 -->
 </body>
 </html>
