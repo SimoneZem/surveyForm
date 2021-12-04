@@ -1,7 +1,8 @@
 <!--
- User Story #9: If I enter numbers outside the range of the number input, 
- which are defined by the min and max attributes, 
- I will see an HTML5 validation error.
+ User Story #10: For the name, email, and number input fields inside the form
+  I can see corresponding labels that describe the purpose 
+  of each field with the following ids:
+  id="name-label", id="email-label", and id="number-label".
 -->
 <!doctype html>
 <head>
@@ -19,15 +20,15 @@
         </p>
         <form id="survey-form" action="data.php">
                 <il class="list-style">
-                    <li class="first">
+                    <li id="name-label">
                         <label for="nome">Nome</label>
                         <input type="text" placeholder="Insert name" name="nome" id="nome" class="text" required> 
                     </li>
-                    <li class="first">
+                    <li id="email-label">
                         <label for="email">Email</label>
                         <input type="email" placeholder=" email here" name="email" id="email" class="text" required>
                     </li>
-                    <li id="number">
+                    <li id="number-label">
                         <label for="age">Age</label>
                         <input type="number" pattern="\d*" placeholder="Age Here" name="age" id="age" min="01-01-2002" class="text" required>
                     </li>
@@ -36,9 +37,7 @@
     </form>
 </div>
 <!--
-    If i want a valid range of number for my input
-    i've to set min attribute:
-    <input type="number" min="xx-yy-zzzz"
+   i've to rename and re-set the label ids
 -->
 </body>
 </html>

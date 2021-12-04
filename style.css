@@ -57,11 +57,16 @@
     float: left;
     box-sizing: border-box;
 }
-.first {
+#name-label {
     margin-left: 1%;
 }
 
-#number {
+#email-label {
+    margin-left: 1%;
+}
+
+
+#number-label {
     margin-left: 1%;
 }
 
