@@ -1,6 +1,7 @@
 <!--
- User Story #11: For the name, email, and number input fields, 
- I can see placeholder text that gives me a description or instructions for each field.
+ User Story #12: Inside the form element, 
+ I can select an option from a dropdown that has
+ a corresponding id="dropdown".
 -->
 <!doctype html>
 <head>
@@ -17,25 +18,47 @@
             Please, take only few minutes to help us. Thanks for your feedback
         </p>
         <form id="survey-form" action="data.php">
-                <il class="list-style">
+                <ul class="list-style">
                     <li id="name-label">
-                        <label for="nome">Nome</label>
-                        <input type="text" placeholder="Name Surname" name="nome" id="nome" class="text" required> 
+                        <div class="input-container">
+                            <label for="nome">Nome</label>
+                            <input type="text" placeholder="Name Surname" name="nome" id="nome" class="text" required> 
+                        </div>
                     </li>
                     <li id="email-label">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="someone@example.com" name="email" id="email" class="text" required>
+                         <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="someone@example.com" name="email" id="email" class="text" required>  
+                         </div>
                     </li>
                     <li id="number-label">
-                        <label for="age">Age</label>
+                        <div class="input-container">
+                            <label for="age">Age</label>
                         <input type="number" pattern="\d*" placeholder="dd-mm-yyyy" name="age" id="age" min="01-01-2002" class="text" required>
+                        </div>
                     </li>
-                </il>
-            
-    </form>
+                    <li id="dropdown">
+                        <div class="input-dropdown">
+                         <form id="dropdown" action="dropdown"></form>
+                            <label for="dropdown"> Which options best describe your experience</label>
+                          <select name="value" id="value">
+                            <option>Insufficient</option>
+                            <option>Sufficient</option>
+                            <option>Good</option>
+                            <option>Excellent</option>
+                          </select>
+                         </form>
+                        </div>  
+                    </li>
+                </ul>
+        </form>
+    </div>
 </div>
 <!--
-   i've to set a better placeholder for my input fields
+   I really don't know how to do a good dropdown,
+   the text inthe input field should be generic instead that
+   one of the option. The space between the dropdown section and
+   the previus box should not be a fixed value
 -->
 </body>
 </html>
