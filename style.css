@@ -94,8 +94,8 @@ input:invalid {
     margin-left: 14px;
 }
 
-.radio-description {
+.select-description {
     display: flex;
-    margin-left: 14px;
+    margin-left: 18px;
     flex-direction: column;
 }
