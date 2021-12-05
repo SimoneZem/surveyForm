@@ -1,8 +1,9 @@
 <!--
- User Story #12: Inside the form element, 
- I can select an option from a dropdown that has
- a corresponding id="dropdown".
+ User Story #13: Inside the form element, 
+ I can select a field from one or more groups of radio buttons. 
+ Each group should be grouped using the name attribute.
 -->
+
 <!doctype html>
 <head>
   <title>Survey Form</title>
@@ -40,7 +41,7 @@
                     <li id="dropdown">
                         <div class="input-dropdown">
                          <form id="dropdown" action="dropdown"></form>
-                            <label for="dropdown"> Which options best describe your experience</label>
+                            <label for="dropdown"> Which options best describe your experience:</label>
                           <select name="value" id="value">
                             <option>Insufficient</option>
                             <option>Sufficient</option>
@@ -50,15 +51,29 @@
                          </form>
                         </div>  
                     </li>
+                  <p class="radio-description">Would you reccommend our services:</p>
+                  <div class="input-radio">
+                      <div>
+                        <input type="radio" id="Yeah" name="yeah" value="yeah" checked>
+                         <label for="Yes">Yeah</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="Maybe" name="maybe" value="maybe">
+                         <label for="maybe">Maybe</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="Nah" name="Nah" value="Nah">
+                         <label for="No">Nah</label>
+                      </div>
+                 </div>
                 </ul>
         </form>
     </div>
 </div>
-<!--
-   I really don't know how to do a good dropdown,
-   the text inthe input field should be generic instead that
-   one of the option. The space between the dropdown section and
-   the previus box should not be a fixed value
--->
 </body>
 </html>
+
+<!--
+    i set the radio button. First choice is checked,
+    i use a div for each radio button
+-->

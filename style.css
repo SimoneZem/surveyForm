@@ -16,15 +16,15 @@
 }
 
 #survey-form {
-    display: flex;
-    height:100%;
+    display: inline;
+    font-family: Geneva;
     width: 800px;
     flex-direction: column;
     background-color: blueviolet; 
-    opacity: 0.50;
+    opacity: 0.750;
     flex-wrap: wrap;
     align-self: center;
-    line-height: 4.30em;
+    line-height: 3.80em;
 }
 
 #title {
@@ -88,4 +88,14 @@ input:invalid {
     max-width: 700px;
     margin-left: 14px;
 
+}
+
+.input-radio {
+    margin-left: 14px;
+}
+
+.radio-description {
+    display: flex;
+    margin-left: 14px;
+    flex-direction: column;
 }
