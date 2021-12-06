@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     align-self: center;
     line-height: 3.80em;
+    text-align: left;
 }
 
 #title {
@@ -95,6 +96,12 @@ input:invalid {
 }
 
 .select-description {
+    display: flex;
+    margin-left: 18px;
+    flex-direction: column;
+}
+
+.textarea {
     display: flex;
     margin-left: 18px;
     flex-direction: column;

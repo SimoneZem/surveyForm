@@ -1,8 +1,6 @@
 <!--
- User Story #14: Inside the form element, 
- I can select several fields
- from a series of checkboxes, 
- each of which must have a value attribute.
+ User Story #15: Inside the form element, 
+ I am presented with a textarea at the end for additional comments.
 -->
 
 <!doctype html>
@@ -80,15 +78,23 @@
                             <input type="checkbox" id="service" name="shipping">
                             <label for="shipping">Retail</label>
                           </div>
-                     </div>                  
+                          <div class="textarea">
+                            <label for="textarea">Any Suggestion?</label>
+                            <textarea name="testo" rows="10" cols="50">
+                              Please Leave a comment
+                            </textarea>
+                        </div>
+                          
+                      </div>                  
                 </ul>
-        </form>
-    </div>
-</div>
+               
+        </form> 
 </body>
 </html>
 
 <!--
-    i set the checkbox, as i do for radio button
-    i create a div for every checkbox
+  in textarea you have to you have to specify
+  rows and cols which are respectively
+  the number of rows and columns that we got in the
+  textarea. Why text in textarea isn't on the left?
 -->
