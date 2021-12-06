@@ -1,6 +1,6 @@
 <!--
- User Story #15: Inside the form element, 
- I am presented with a textarea at the end for additional comments.
+ User Story #16: Inside the form element, 
+ I am presented with a button with id="submit" to submit all my inputs.
 -->
 
 <!doctype html>
@@ -83,18 +83,17 @@
                             <textarea name="testo" rows="10" cols="50">
                               Please Leave a comment
                             </textarea>
-                        </div>
-                          
+                          </div>
+                          <div id="submit-button">
+                            <label for="submit"></label>
+                            <input type="submit" name="submit-button" id="submit" class="submit-button">                         
                       </div>                  
-                </ul>
-               
+                </ul>               
         </form> 
 </body>
 </html>
 
 <!--
-  in textarea you have to you have to specify
-  rows and cols which are respectively
-  the number of rows and columns that we got in the
-  textarea. Why text in textarea isn't on the left?
+  I've put the submit button and i want it 
+  centered
 -->

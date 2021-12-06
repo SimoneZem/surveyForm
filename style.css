@@ -12,20 +12,25 @@
     left: 0px; 
     top: 0px; 
     flex-direction: column;
-    align-content: center;
 }
 
 #survey-form {
-    display: inline;
-    font-family: Geneva;
-    width: 800px;
-    flex-direction: column;
+    width: 60vw;
     background-color: blueviolet; 
     opacity: 0.750;
-    flex-wrap: wrap;
-    align-self: center;
     line-height: 3.80em;
+    align-self: center;
     text-align: left;
+    
+}
+
+.list-style {
+    width: 55vw;
+    list-style: none;
+    font-family: Geneva;
+    font-size: 25px;
+    float: left;
+    box-sizing: border-box;
 }
 
 #title {
@@ -45,13 +50,6 @@
     align-self: center;
 }
 
-.list-style {
-    list-style: none;
-    font-family: Geneva;
-    font-size: 25px;
-    float: left;
-    box-sizing: border-box;
-}
 #name-label {
     margin-left: 1%;
 }
@@ -96,13 +94,20 @@ input:invalid {
 }
 
 .select-description {
-    display: flex;
     margin-left: 18px;
-    flex-direction: column;
+    
 }
 
 .textarea {
     display: flex;
     margin-left: 18px;
     flex-direction: column;
+}
+
+#submit-button {
+    display: flex;
+    height: 30px;
+    background-color: green;
+    margin-top: 20px;
+    margin-left: 20px;
 }
